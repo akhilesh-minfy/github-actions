@@ -1,0 +1,12 @@
+name: Hello GitHub Actions
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting
+        run: echo "Hello, World! GitHub Actions is running!"
+      - name: Print a multiline message
+        run: |
+          echo "This is the first line."
+          echo "This is the second line."
